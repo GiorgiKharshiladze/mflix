@@ -407,6 +407,7 @@ def add_user(name, email, hashedpw):
         # TODO: Durable Writes
         # Use a more durable Write Concern for this operation.
         db.users.insert_one({"name": name, "email":email, "password":hashedpw})
+        db.sessions.insert_one({"user_id": email})
         return {"success": True}
     except DuplicateKeyError:
         return {"error": "A user with the given email already exists."}
