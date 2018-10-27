@@ -341,7 +341,7 @@ def add_comment(movie_id, user, comment, date):
     """
     # TODO: Create/Update Comments
     # Construct the comment document to be inserted into MongoDB.
-    comment_doc = {"some_field": "some_value"}
+    comment_doc = {"name": user['name'], "email": user['email'], "movie_id": movie_id, "text": comment, "date": date}
     return db.comments.insert_one(comment_doc)
 
 
