@@ -1,8 +1,11 @@
 =====
 mflix
 =====
+MongoDB university project built in Python3, MongoDB, Flask, ReactJS.
+I got familiar with the application architecture, database client configuration, basic read, update, delete operations, aggregation framework, joins, read concerns and bulk operations.
+In this project I had to use connection pooling, error and timeout handlingand principle of least privilege as well.
 
-MongoDB university project built in Python3, MongoDB, Flask, ReactJS
+All the unittests are passed!
 
 This is a short guide on setting up the system and environment dependencies
 required for the MFlix application to run.
